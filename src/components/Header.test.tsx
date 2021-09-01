@@ -12,10 +12,11 @@ it('checks that the Header component renders', () => {
   );
 
   const renderedHeader = screen.getByRole('navigation');
-  const renderedAppName = screen.getByText('FocusQA');
-  const renderedButton = screen.getByRole('button');
+  const renderedButtons = screen.getAllByRole('button');
 
   expect(renderedHeader).toBeVisible();
-  expect(renderedHeader).toContainElement(renderedAppName);
-  expect(renderedHeader).toContainElement(renderedButton);
+  renderedButtons.forEach((button) => {
+    expect(renderedHeader).toContainElement(button);
+  });
+  expect(renderedButtons.length).toEqual(4);
 });

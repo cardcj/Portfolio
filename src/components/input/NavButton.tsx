@@ -20,22 +20,22 @@ const NavButtonStyled = styled.button`
   padding: 0 ${spacing(4)};
   border-radius: ${radiusConstraint(4)};
   font-family: ${(props) => props.theme.fonts.main};
-  color: ${(props) => props.theme.colors.common.grey};
+  color: ${(props) => props.theme.colors.common.white};
 
   &:before {
     width: 0;
     bottom: 0;
     content: '';
     left: 50%;
-    height: 1px;
+    height: 2px;
     position: absolute;
-    transition: width 0.2s, left 0.2s;
+    transition: all 0.3s ease-out;
   }
 
   &:hover:before {
     width: 100%;
     left: 0;
-    background-color: #000;
+    background-color: ${(props) => props.theme.colors.primary};
   }
 `;
 

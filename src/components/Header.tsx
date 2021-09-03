@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { spacing } from '../Theme';
-import Button from './input/Button';
+import NavButton from './input/NavButton';
 
 const Navbar = styled.nav`
-  background-color: ${(props) => props.theme.colors.common.white};
+  background-color: ${(props) => props.theme.colors.common.grey};
   min-width: 100%;
   display: flex;
   flex-flow: row no-wrap;
@@ -18,10 +18,10 @@ const Navbar = styled.nav`
 const Header = (): React.ReactElement => {
   return (
     <Navbar>
-      <Button variant="primary" text="Home" />
-      <Button variant="primary" text="About Me" />
-      <Button variant="primary" text="Projects" />
-      <Button variant="primary" text="Contact" />
+      <NavButton text="Home" />
+      <NavButton text="About Me" />
+      <NavButton text="Projects" />
+      <NavButton text="Contact" />
     </Navbar>
   );
 };

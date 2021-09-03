@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { spacing } from '../Theme';
-import Button from './input/Button';
 
 const Footer = styled.footer`
-  background-color: ${(props) => props.theme.colors.common.white};
+  background-color: ${(props) => props.theme.colors.common.grey};
   position: fixed;
   bottom: 0;
   min-width: 100%;
@@ -16,14 +15,7 @@ const Footer = styled.footer`
 `;
 
 const Header = (): React.ReactElement => {
-  return (
-    <Footer>
-      <Button variant="faded" text="In Progress" />
-      <Button variant="primary" text="Done" />
-      <Button variant="secondary" text="Blocked" />
-      <Button variant="tertiary" text="Failed" />
-    </Footer>
-  );
+  return <Footer />;
 };
 
 export default Header;

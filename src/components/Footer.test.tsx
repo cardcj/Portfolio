@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '../Theme';
 import Footer from './Footer';
 
-it('checks that the Header component renders', () => {
+it('checks that the Footer component renders', () => {
   render(
     <ThemeProvider theme={theme}>
       <Footer />
@@ -12,11 +12,6 @@ it('checks that the Header component renders', () => {
   );
 
   const renderedFooter = screen.getByRole('contentinfo');
-  const renderedButtons = screen.getAllByRole('button');
 
   expect(renderedFooter).toBeVisible();
-  renderedButtons.forEach((button) => {
-    expect(renderedFooter).toContainElement(button);
-  });
-  expect(renderedButtons.length).toBe(4);
 });

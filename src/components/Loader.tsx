@@ -46,7 +46,7 @@ const LoaderSection = styled.section`
 
 const Loader = (): React.ReactElement => {
   return (
-    <LoaderSection data-testId="loader">
+    <LoaderSection data-testid="loader">
       <span />
       <span />
       <span />

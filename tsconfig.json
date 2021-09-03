@@ -1,19 +1,16 @@
 {
     "compilerOptions": {
         "jsx": "react",
-        "module": "commonjs",
+        "module": "es6",
         "noImplicitAny": true,
         "outDir": "./build/",
         "preserveConstEnums": true,
         "removeComments": true,
-        "target": "es2017",
+        "target": "es6",
         "types": ["jest", "node"],
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node"
     },
-    "include": [
-        "./jest-setup.ts",
-        "./src/**/*.{ts,tsx}"
-    ],
     "exclude": [
         "node_modules",
         "build",

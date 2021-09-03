@@ -20,7 +20,7 @@ const LoaderSection = styled.section`
 
   & > span {
     flex: 0 0 auto;
-    background-color: coral;
+    background-color: ${(props) => props.theme.colors.primary};
     width: 20px;
     height: 20px;
     margin: 2px 2px;
@@ -30,17 +30,17 @@ const LoaderSection = styled.section`
   }
 
   & > span:nth-child(2) {
-    background-color: aquamarine;
+    background-color: ${(props) => props.theme.colors.secondary};
     animation-delay: 0.3s;
   }
 
   & > span:nth-child(3) {
-    background-color: purple;
+    background-color: ${(props) => props.theme.colors.tertiary};
     animation-delay: 0.3s;
   }
 
   & > span:nth-child(4) {
-    background-color: black;
+    background-color: ${(props) => props.theme.colors.common.black};
   }
 `;
 

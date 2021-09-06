@@ -7,7 +7,7 @@
     "start": "webpack serve --mode=development",
     "build": "webpack --mode=production",
     "check-types": "tsc --jsx react --noEmit",
-    "test": "jest --findRelatedTests",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint */**/*.{js,ts,tsx} --quiet --fix"
@@ -81,7 +81,7 @@
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "eslint --fix",
-      "npm run test"
+      "npm run test -- --findRelatedTests"
     ],
     "*.{ts,tsx}": [
       "bash -c 'npm run check-types'"

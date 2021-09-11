@@ -2,7 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './Theme';
-import './normalize.css';
+import './stylesheets/normalize.css';
+import './stylesheets/global.css';
 
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';

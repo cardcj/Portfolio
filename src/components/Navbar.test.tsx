@@ -2,21 +2,21 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../Theme';
-import Header from './Header';
+import Navbar from './Navbar';
 
-it('checks that the Header component renders', () => {
+it('checks that the Navbar component renders', () => {
   render(
     <ThemeProvider theme={theme}>
-      <Header />
+      <Navbar />
     </ThemeProvider>
   );
 
-  const renderedHeader = screen.getByRole('navigation');
+  const renderedNavbar = screen.getByRole('navigation');
   const renderedButtons = screen.getAllByRole('button');
 
-  expect(renderedHeader).toBeVisible();
+  expect(renderedNavbar).toBeVisible();
   renderedButtons.forEach((button) => {
-    expect(renderedHeader).toContainElement(button);
+    expect(renderedNavbar).toContainElement(button);
   });
   expect(renderedButtons.length).toEqual(4);
 });

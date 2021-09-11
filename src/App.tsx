@@ -4,14 +4,14 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './Theme';
 import './normalize.css';
 
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 class App extends React.Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <Header />
+        <Navbar />
         <Footer />
       </ThemeProvider>
     );

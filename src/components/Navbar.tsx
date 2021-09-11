@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { spacing } from '../Theme';
 import NavButton from './input/NavButton';
 
-const Navbar = styled.nav`
+const StyledNav = styled.nav`
   background-color: ${(props) => props.theme.colors.common.grey};
   min-width: 100%;
   display: flex;
@@ -15,15 +15,15 @@ const Navbar = styled.nav`
   box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
 `;
 
-const Header = (): React.ReactElement => {
+const Navbar = (): React.ReactElement => {
   return (
-    <Navbar>
+    <StyledNav>
       <NavButton text="Home" />
       <NavButton text="About Me" />
       <NavButton text="Projects" />
       <NavButton text="Contact" />
-    </Navbar>
+    </StyledNav>
   );
 };
 
-export default Header;
+export default Navbar;

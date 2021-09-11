@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { spacing, radiusConstraint } from '../../Theme';
+import { spacing } from '../../Theme';
 
 export interface NavButtonProps {
   text: string;

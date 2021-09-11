@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css, keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import Paragraph from './text/Paragraph';
 import { WELCOME_TITLE, WELCOME_PARA } from '../constants/strings';

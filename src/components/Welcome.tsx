@@ -7,7 +7,7 @@ import { WELCOME_TITLE, WELCOME_PARA } from '../constants/strings';
 const slideUpFadeIn = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
@@ -29,7 +29,7 @@ const WelcomeWrapper = styled.section`
     width: 100%;
     min-width: 400px;
     margin: 0 auto;
-    animation: ${slideUpFadeIn} 2s;
+    animation: ${slideUpFadeIn} 1.25s;
   }
 `;
 

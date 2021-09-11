@@ -8,7 +8,7 @@ export interface ParagraphProps {
 
 const FormattedP = styled.p`
   color: ${(props) => props.theme.colors.common.black};
-  font-family: ${(props) => props.theme.fonts.main};
+  font-family: ${(props) => props.theme.fonts.content};
   line-height: ${spacing(5)};
 `;
 

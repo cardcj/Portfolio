@@ -21,7 +21,7 @@ const WelcomeWrapper = styled.section`
 `;
 
 const WelcomeTitle = styled.h1`
-  font-family: ${(props) => props.theme.fonts.header};
+  font-family: ${(props) => props.theme.fonts.title};
   font-size: 4em;
   color: ${(props) => props.theme.colors.common.black};
 `;

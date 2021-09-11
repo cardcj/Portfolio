@@ -5,6 +5,7 @@ import { theme } from './Theme';
 import './normalize.css';
 
 import Navbar from './components/Navbar';
+import Welcome from './components/Welcome';
 import Footer from './components/Footer';
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={theme}>
         <Navbar />
+        <Welcome />
         <Footer />
       </ThemeProvider>
     );

@@ -10,12 +10,12 @@ export const theme: DefaultTheme = {
     primary: 'coral',
     secondary: 'aquamarine',
     tertiary: 'purple',
-    darkenPrimary: '#01f8a8',
+    darkenPrimary: '#ec5f00',
     faded: '#e0e0e0',
   },
   fonts: {
-    header: 'Black Ops One',
-    main: 'Arvo',
+    title: 'Monoton',
+    content: 'Comfortaa',
   },
 };
 

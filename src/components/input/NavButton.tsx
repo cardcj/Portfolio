@@ -19,7 +19,7 @@ const NavButtonStyled = styled.button`
   border: none;
   padding: 0 ${spacing(4)};
   border-radius: ${radiusConstraint(4)};
-  font-family: ${(props) => props.theme.fonts.main};
+  font-family: ${(props) => props.theme.fonts.content};
   color: ${(props) => props.theme.colors.common.white};
 
   &:before {

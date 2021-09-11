@@ -15,8 +15,8 @@ declare module 'styled-components' {
       faded: string;
     };
     fonts: {
-      header: string;
-      main: string;
+      title: string;
+      content: string;
     };
   }
 }

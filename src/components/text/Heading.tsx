@@ -15,7 +15,8 @@ const FontAwesomeThemed = styled(FontAwesomeIcon)`
 `;
 
 const FormattedHeading = styled.h2`
-  font-family: ${(props) => props.theme.fonts.header};
+  font-family: ${(props) => props.theme.fonts.content};
+  font-weight: 700;
   color: ${(props) => props.theme.colors.common.black};
   margin-left: ${spacing(1)};
 `;

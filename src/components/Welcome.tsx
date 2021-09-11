@@ -1,22 +1,35 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 import Paragraph from './text/Paragraph';
 import { WELCOME_TITLE, WELCOME_PARA } from '../constants/strings';
 
+const slideUpFadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 const WelcomeWrapper = styled.section`
   width: 100%;
   height: 400px;
-  background-color: skyblue;
+  background-image: url('https://picsum.photos/id/100/3000/400');
   text-align: center;
-  padding: 125px;
+  padding: 130px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 
   & > * {
     width: 100%;
+    min-width: 400px;
     margin: 0 auto;
+    animation: ${slideUpFadeIn} 5s;
   }
 `;
 

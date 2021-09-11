@@ -29,7 +29,7 @@ const WelcomeWrapper = styled.section`
     width: 100%;
     min-width: 400px;
     margin: 0 auto;
-    animation: ${slideUpFadeIn} 5s;
+    animation: ${slideUpFadeIn} 2s;
   }
 `;
 

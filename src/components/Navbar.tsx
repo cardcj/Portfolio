@@ -4,7 +4,7 @@ import { spacing } from '../Theme';
 import NavButton from './input/NavButton';
 
 const StyledNav = styled.nav`
-  background-color: ${(props) => props.theme.colors.common.grey};
+  background-color: ${(props) => props.theme.colors.common.black};
   min-width: 100%;
   display: flex;
   flex-flow: row no-wrap;

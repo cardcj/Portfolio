@@ -4,7 +4,7 @@ import { spacing } from '../Theme';
 import { CR_NOTICE } from '../constants/strings';
 
 const StyledFooter = styled.footer`
-  background-color: ${(props) => props.theme.colors.common.grey};
+  background-color: ${(props) => props.theme.colors.common.black};
   position: fixed;
   bottom: 0;
   min-width: 100%;

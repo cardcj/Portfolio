@@ -12,7 +12,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const NavButtonStyled = styled.button`
-  background-color: ${(props) => props.theme.colors.common.grey};
+  background-color: ${(props) => props.theme.colors.common.black};
   min-width: 100px;
   height: 40px;
   font-size: 1em;

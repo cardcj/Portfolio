@@ -2,7 +2,7 @@ import { ThemeProvider } from 'styled-components';
 import { addDecorator } from '@storybook/react';
 import { withThemes } from '@react-theming/storybook-addon';
 
-import '../src/normalize.css';
+import '../src/stylesheets/normalize.css';
 import { theme } from '../src/Theme';
 
 addDecorator(withThemes(ThemeProvider, [theme]));

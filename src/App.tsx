@@ -8,6 +8,7 @@ import './stylesheets/global.css';
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
 import Footer from './components/Footer';
+import ColLayout from './containers/ColLayout';
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,14 @@ class App extends React.Component {
       <ThemeProvider theme={theme}>
         <Navbar />
         <Welcome />
+        <ColLayout numColumns={3}>
+          {
+            // TODO: Replace these with Card components once made
+          }
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </ColLayout>
         <Footer />
       </ThemeProvider>
     );

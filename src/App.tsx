@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
 import Footer from './components/Footer';
 import ColLayout from './containers/ColLayout';
+import ImageCard from './containers/ImageCard';
 
 class App extends React.Component {
   render() {
@@ -17,12 +18,21 @@ class App extends React.Component {
         <Navbar />
         <Welcome />
         <ColLayout numColumns={3}>
-          {
-            // TODO: Replace these with Card components once made
-          }
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
+          <ImageCard
+            altText="Placeholder image"
+            cardBodyText="This is my card"
+            imageSrc="https://picsum.photos/id/155/80/80"
+          />
+          <ImageCard
+            altText="Placeholder image"
+            cardBodyText="This is my card"
+            imageSrc="https://picsum.photos/id/155/80/80"
+          />
+          <ImageCard
+            altText="Placeholder image"
+            cardBodyText="This is my card"
+            imageSrc="https://picsum.photos/id/155/80/80"
+          />
         </ColLayout>
         <Footer />
       </ThemeProvider>

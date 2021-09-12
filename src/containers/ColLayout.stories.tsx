@@ -7,13 +7,13 @@ export default {
   title: 'Containers/ColLayout',
 };
 
-const Template = (args: ColLayoutProps) => {
+const Template = (args: ColLayoutProps) => (
   <ColLayout {...args}>
     <div>1</div>
     <div>2</div>
     <div>3</div>
-  </ColLayout>;
-};
+  </ColLayout>
+);
 
 export const Default = Template.bind({});
 Default.args = {

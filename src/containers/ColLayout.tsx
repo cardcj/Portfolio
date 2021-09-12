@@ -11,6 +11,7 @@ const GridContainer = styled.section<ColLayoutProps>`
   grid-template-columns: repeat(${(props) => props.numColumns}, 1fr);
   justify-items: center;
   width: 100%;
+  padding: 25px;
 `;
 
 const ColLayout = (props: ColLayoutProps): React.ReactElement => {

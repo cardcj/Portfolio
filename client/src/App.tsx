@@ -17,19 +17,23 @@ interface State {
 
 class App extends React.Component {
   state: State = {
-    data: null
+    data: null,
   };
-  
-  callBackendAPI = async () => {
-    const resp = await fetch('/express_backend');
-    const body = await resp.json();
 
-    if(resp.status !== 200) {
-      throw Error(body.message);
+  callBackendAPI = async () => {
+    try {
+      const resp = await fetch('/api/express_backend');
+      const body = await resp.json();
+
+      if (resp.status !== 200) {
+        throw Error(body.message);
+      }
+      return body;
+    } catch (error) {
+      console.log(error);
     }
-    return body;
-  }
-  
+  };
+
   componentDidMount() {
     this.callBackendAPI()
       .then((resp) => this.setState({ data: resp.express }))

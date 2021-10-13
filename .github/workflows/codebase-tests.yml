@@ -1,7 +1,7 @@
 name: Pre-merge checks
 on: [push]
 jobs:
-  code-checks:
+  ui-code-checks:
     runs-on: ubuntu-latest
     defaults:
         run:
@@ -12,6 +12,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-      - run: npm ci
-      - run: npm run check-types
-      - run: npm run test
+      - name: Run tests
+        working-directory: ./client
+        run: | 
+          npm ci
+          npm run check-types
+          npm run test

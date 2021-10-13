@@ -11,7 +11,35 @@ import Footer from './components/Footer';
 import ColLayout from './containers/ColLayout';
 import ImageCard from './containers/ImageCard';
 
+interface State {
+  data: Response;
+}
+
 class App extends React.Component {
+  state: State = {
+    data: null,
+  };
+
+  callBackendAPI = async () => {
+    try {
+      const resp = await fetch('/api/express_backend');
+      const body = await resp.json();
+
+      if (resp.status !== 200) {
+        throw Error(body.message);
+      }
+      return body;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  componentDidMount() {
+    this.callBackendAPI()
+      .then((resp) => this.setState({ data: resp.express }))
+      .catch((error) => console.log(error));
+  }
+
   render() {
     return (
       <ThemeProvider theme={theme}>

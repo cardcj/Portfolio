@@ -5,7 +5,7 @@ import { CR_NOTICE } from '../constants/strings';
 
 const StyledFooter = styled.footer`
   background-color: ${(props) => props.theme.colors.common.black};
-  position: fixed;
+  position: relative;
   bottom: 0;
   min-width: 100%;
   display: flex;

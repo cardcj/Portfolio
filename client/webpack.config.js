@@ -18,7 +18,7 @@ module.exports = {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        loader: "awesome-typescript-loader",
+        loader: "ts-loader",
       },
       {
         test: /\.(js|jsx)$/,
@@ -39,6 +39,14 @@ module.exports = {
         ],
       },
     ],
+  },
+  // Proxy settings for the development server
+  devServer: {
+    proxy: {
+      '/api': {
+        'target': 'http://localhost:5000',
+      }
+    }
   },
   plugins: [
     new HtmlWebPackPlugin({

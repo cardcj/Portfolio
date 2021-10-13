@@ -1,2 +1,3 @@
 # Portfolio
-## My portfolio
+![codebase-tests](https://github.com/cardcj/Portfolio/actions/workflows/codebase-tests.yml/badge.svg)
+
